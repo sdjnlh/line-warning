@@ -1,0 +1,28 @@
+/* pages/mine/mine.wxss */
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar[size] {
+  width: 100rpx;
+}
+.mr-10p {
+  margin-right: 10px;
+}
+.mt-5p {
+  margin-top: 5px;
+}
+.text-center {
+  text-align: center !important;
+}
+.userinfo-avatar:after {
+  border: none;
+}
+.w-40 {
+  width: 40%;
+}

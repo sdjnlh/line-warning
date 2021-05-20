@@ -1,0 +1,7 @@
+<view style="margin-bottom:60px">
+    <van-cell title="预警名称：" value="{{warning.name}}"></van-cell>
+    <van-cell title="预警类型：" value="{{warning.type}}"></van-cell>
+    <van-cell title="预警地点：" value="{{warning.address}}"></van-cell>
+    <van-cell title="预警时间：" value="{{warning.shijian}}"></van-cell>
+    <van-cell title="详细说明：" label="{{warning.content}}"></van-cell>
+</view>

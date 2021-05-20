@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor":"#FF6600",
+  "navigationBarTextStyle":"white",
+  "usingComponents": {
+    "van-button": "/path/to/@vant/weapp/dist/button/index",
+    "van-cell": "/path/to/@vant/weapp/dist/cell/index",
+    "van-cell-group": "/path/to/@vant/weapp/dist/cell-group/index",
+    "van-collapse": "/path/to/@vant/weapp/dist/collapse/index",
+    "van-collapse-item": "/path/to/@vant/weapp/dist/collapse-item/index",
+    "van-dialog": "/path/to/@vant/weapp/dist/dialog/index"
+  }
+}

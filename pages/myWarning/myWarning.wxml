@@ -1,0 +1,9 @@
+<view style="margin-bottom:60px">
+  <van-dialog id="van-dialog"></van-dialog>
+  <van-cell-group wx:for="{{items}}" >
+    <van-cell :key="{{item.name}}" id="{{item._id}}" title-class="text-info pointer" class="text-info" title="{{item.name}}" label="{{item.content}}">
+      <van-button round icon="delete" id="{{item._id}}" type="danger" bind:click="handleDeleteWarning" hairline size="mini"></van-button>
+      <van-button round class="ml-5" id="{{item._id}}" icon="edit" type="info" bind:click="toDetailPage" hairline size="mini"></van-button>
+    </van-cell>
+  </van-cell-group>
+</view>

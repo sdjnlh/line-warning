@@ -1,0 +1,36 @@
+<view style="padding:10px">
+  <van-notify id="van-notify"></van-notify>
+  <form bind:submit="onSubmitWarning" bind:reset="onClearWarning">
+    <van-filed input-align="right" required value="{{name}}" bind:change="onChangeName" label="预警名称：" error-message="{{errMsg}}"></van-filed>
+    <van-cell title="预警类型" value="{{warning.type}}" bind:click="showPicker"></van-cell>
+    <van-popup show="{{pickerShow}}" position="bottom">
+      <van-picker show-toolbar columns="{{columns}}" bind:cancel="closePicker" bind:confirm="onCheckPicker"></van-picker>
+    </van-popup>
+    <van-filed value="{{address}}" bind:change="onChangeAddress" input-align="right" label="预警地点："></van-filed>
+    <van-cell title="预警时间" bind:click="showCalendar" value="{{warning.shijian}}"></van-cell>
+    <van-popup show="{{show}}" position="bottom">
+      <van-datetime-picker
+              value="{{warning.shijian}}"
+              type="date"
+              :formatter="formatDate"
+              bind:confirm="onConfirm"
+              bind:close="onClose"
+              :min-date="{{minDate}}}"
+              :max-date="{{maxDate}}">
+      </van-datetime-picker>
+    </van-popup>
+    <van-filed value="{{content}}" rows="8" bind:change="onChangeContent" type="textarea" autosize label="详细说明：" placeholder="请输入详细说明"></van-filed>
+    <view class="mt-20p" style="text-align: center">
+      <button form-type="reset" size="mini">重置</button>
+      <button type="primary" form-type="submit" size="mini" class="ml-10p">提交</button>
+    </view>
+<!--    <van-button round class="mt-20p" type="danger" bind:click="onClearWarning" size="small">清空</van-button>-->
+<!--    <van-button class="ml-10p text-center mt-20p" round type="primary" bind:click="onSubmitWarning" size="small">提交</van-button>-->
+  </form>
+  <van-tabbar active="{{ active }}" bind:change="onChange" active-color="#FF6600">
+    <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item icon="search">筛选</van-tabbar-item>
+    <van-tabbar-item icon="edit">录入</van-tabbar-item>
+    <van-tabbar-item icon="contact">我的</van-tabbar-item>
+  </van-tabbar>
+</view>

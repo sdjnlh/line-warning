@@ -1,0 +1,16 @@
+.text-info {
+  font-size: 14px;
+  color: mediumblue;
+}
+.pointer {
+  cursor: pointer;
+}
+.ml-10p {
+  margin-left: 10px;
+}
+.text-center {
+  text-align: center !important;
+}
+.mt-20p {
+  margin-top: 20px;
+}

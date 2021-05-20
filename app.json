@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/screen/screen",
+    "pages/writeing/writeing",
+    "pages/warningDetail/detail",
+    "pages/myWarning/myWarning"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "线路治安预警",
+    "navigationBarBackgroundColor": "#FF6600",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

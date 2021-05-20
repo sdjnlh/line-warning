@@ -1,0 +1,30 @@
+<view>
+  <view style="height:35vh;display:flex;justify-content:center;align-items:center;background:#FF6600;flex-direction:row">
+
+    <view style="color:white;margin-left:10px">
+      <view class="text-center">
+        <button open-type="getUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})" size="default"></button>
+      </view>
+      <view class="text-center mt-5p">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+
+
+
+  <van-cell bindtap="tocart" title="我的预警" is-link />
+  <van-cell title="系统通知" is-link>
+    <van-icon class="mr-10p mt-5p" name="chat-o" dot size="20" />
+  </van-cell>
+  <van-cell bindtap="toChangePassword" title="修改密码" is-link />
+
+
+  <van-tabbar active="{{ active }}" bind:change="onChange" active-color="#FF6600">
+    <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item icon="search">筛选</van-tabbar-item>
+    <van-tabbar-item icon="edit">录入</van-tabbar-item>
+    <van-tabbar-item icon="contact">我的</van-tabbar-item>
+  </van-tabbar>
+
+
+
+</view>

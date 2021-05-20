@@ -1,0 +1,16 @@
+{
+  "name": "xlzayj",
+  "version": "1.0.0",
+  "dependencies": {
+    "@vant/weapp": "^1.6.2",
+    "regenerator": "^0.13.1"
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@vant/weapp/*": [
+        "./node_modules/@vant/weapp/dist/*"
+      ]
+    }
+  }
+}

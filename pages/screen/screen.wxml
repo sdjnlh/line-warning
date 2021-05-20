@@ -1,0 +1,21 @@
+<view style="margin-bottom:60px">
+<!--  <view class="df-row-ac">-->
+<!--    <van-dropdown-menu class="w-30">-->
+<!--      <van-dropdown-item value="{{defaultTime}}" bind:change="onChangeTimeFilter" options="{{ timeFilter }}"></van-dropdown-item>-->
+<!--    </van-dropdown-menu>-->
+<!--  </view>-->
+  <van-search value="{{ screenValue }}" shape="round" bind:search="onSearch" background="#FF6600" placeholder="请输入搜索关键词" />
+  <van-tabs value="{{activeType}}" bind:click="onChangeTabs">
+    <van-tab wx:for="{{options}}" title="{{item.label}}" name="{{item.value}}" ></van-tab>
+  </van-tabs>
+  <van-cell-group>
+    <van-cell wx:for="{{items}}" is-link id="{{item._id}}" bind:click="toDetailPage" title-class="text-info pointer" class="text-info" title="{{item.name}}" label="{{item.content}}">
+    </van-cell>
+  </van-cell-group>
+  <van-tabbar active="{{ active }}" bind:change="onChange" active-color="#FF6600">
+    <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item icon="search">筛选</van-tabbar-item>
+    <van-tabbar-item icon="edit">录入</van-tabbar-item>
+    <van-tabbar-item icon="contact">我的</van-tabbar-item>
+  </van-tabbar>
+</view>

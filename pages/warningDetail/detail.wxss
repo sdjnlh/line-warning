@@ -1,0 +1,19 @@
+
+.line-up {
+  line-height: 75px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: white
+}
+.text-info {
+  font-size: 14px;
+  color: mediumblue;
+}
+.df-row-ac {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.pointer {
+  cursor: pointer;
+}

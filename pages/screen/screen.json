@@ -1,0 +1,26 @@
+{
+  "navigationBarBackgroundColor":"#FF6600",
+  "navigationBarTextStyle":"white",
+  "usingComponents": {
+    "van-row": "/path/to/@vant/weapp/dist/row/index",
+    "van-col": "/path/to/@vant/weapp/dist/col/index",
+    "van-image": "/path/to/@vant/weapp/dist/image/index",
+    "van-tag": "/path/to/@vant/weapp/dist/tag/index",
+    "van-divider": "/path/to/@vant/weapp/dist/divider/index",
+    "van-card": "/path/to/@vant/weapp/dist/card/index",
+    "van-stepper": "/path/to/@vant/weapp/dist/stepper/index",
+    "van-button": "/path/to/@vant/weapp/dist/button/index",
+    "van-search": "/path/to/@vant/weapp/dist/search/index",
+    "van-icon": "/path/to/@vant/weapp/dist/icon/index",
+    "van-tabs": "/path/to/@vant/weapp/dist/tabs/index",
+    "van-tab": "/path/to/@vant/weapp/dist/tab/index",
+    "van-collapse": "/path/to/@vant/weapp/dist/collapse/index",
+    "van-collapse-item": "/path/to/@vant/weapp/dist/collapse-item/index",
+    "van-cell": "/path/to/@vant/weapp/dist/cell/index",
+    "van-cell-group": "/path/to/@vant/weapp/dist/cell-group/index",
+    "van-tabbar": "/path/to/@vant/weapp/dist/tabbar/index",
+    "van-tabbar-item": "/path/to/@vant/weapp/dist/tabbar-item/index",
+    "van-dropdown-menu": "/path/to/@vant/weapp/dist/dropdown-menu/index",
+    "van-dropdown-item": "/path/to/@vant/weapp/dist/dropdown-item/index"
+  }
+}
